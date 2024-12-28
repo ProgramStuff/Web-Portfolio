@@ -1,0 +1,197 @@
+:root{
+    --titleGreen: #0B8494;
+}
+
+html {
+    max-width: 100%;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Merryweather Sans', sans-serif;
+    color: black;
+    background-color: var(--titleGreen);
+}
+
+hr {
+    border-color: gray;
+    border-style: none;
+    border-top-style: dotted;
+    width: 4%;
+    border-width: 5px;
+    margin: 100px auto;
+
+}
+
+h3 {
+    color: black;
+}
+
+a {
+    color: var(--titleGreen);
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+p {
+    line-height: 2;
+}
+
+.middle-container{
+    margin: 100px 0;
+}
+
+.my-avatar {
+    width: 150px;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+div.top-container {
+    width: 100%;
+    position: relative;
+    padding-top: 53%;
+    background-color: rgb(33, 33, 33);
+}
+
+h1#title {
+    color: var(--titleGreen);
+    position: absolute;
+    margin: -6.5em auto 0 48%;
+    font-size: 7rem;
+    line-height: 2;
+    letter-spacing: 0.08em;
+}
+
+h2#about-me {
+    color: var(--titleGreen);
+    position: absolute;
+    margin: -12em auto 0 48%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+p#intro {
+    color: var(--titleGreen);
+    position: absolute;
+    margin: -23em auto 0 48%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+    padding-right: 15em;
+}
+
+img.crescent2 {
+    position: absolute;
+    transform: rotate(30deg);
+    opacity: 10%;
+    left: 4.6%;
+    bottom: 40%;
+}
+
+img.circle {
+    position: absolute;
+    opacity: 10%;
+    left: 70%;
+    bottom: 65%;
+    width: 25%;
+}
+
+img.myself {
+    position: absolute;
+    height: 25em;
+    left: 20%;
+    bottom: 68%;
+    border-radius: 8%;
+}
+
+img.sky {
+    position: absolute;
+    height: 25em;
+    width: 15%;
+    left: 17%;
+    bottom: 40%;
+    border-radius: 8%;
+}
+
+img.interpersonal-img {
+    border-radius: 50%;
+    width: 20%;
+    float: left;
+    margin-right: 30px;
+}
+
+img.curiosity-img {
+    border-radius: 50%;
+    width: 20%;
+    float: right;
+    margin-left: 30px;
+}
+
+img#blurred {
+    position: absolute;
+    opacity: 30%;
+    left: 60%;
+    bottom: 3%;
+    width: 30%;
+}
+
+
+/* .skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+} */
+
+
+
+/* .btn {
+    background: black;
+    background-image: -webkit-linear-gradient(top, black, black);
+    background-image: -moz-linear-gradient(top, black, black);
+    background-image: -ms-linear-gradient(top, black, black);
+    background-image: -o-linear-gradient(top, black, black);
+    background-image: linear-gradient(to bottom, black, black);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #C197D2;
+    background-image: -webkit-linear-gradient(top, #C197D2, #C197D2);
+    background-image: -moz-linear-gradient(top, #C197D2, #C197D2);
+    background-image: -ms-linear-gradient(top, #C197D2, #C197D2);
+    background-image: -o-linear-gradient(top, #C197D2, #C197D2);
+    background-image: linear-gradient(to bottom, #C197D2, #C197D2);
+    text-decoration: none;
+} */
+
+  .intro{
+    width: 30%;
+    margin: auto;
+}
+
+  .contact-message{
+    width: 40%;
+    margin: 40px auto 60px
+}
+

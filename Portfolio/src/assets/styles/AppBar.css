@@ -1,0 +1,35 @@
+.pages:hover {
+    background: #332b37;
+    background-image: -webkit-linear-gradient(top, #332b37, #332b37);
+    background-image: -moz-linear-gradient(top, #332b37, #332b37);
+    background-image: -ms-linear-gradient(top, #332b37, #332b37);
+    background-image: -o-linear-gradient(top, #332b37, #332b37);
+    background-image: linear-gradient(to bottom, #332b37, #332b37);
+    text-decoration: none;
+}
+
+
+
+
+/* Header Background: rgb(171, 164, 137) - greyish beige
+Navigation Bar Background: rgb(210, 204, 186) - beige 
+Main Content Background: rgb(24, 49, 34) - dark green
+Footer Background: rgb(202, 196, 177) - another beige
+Text Color: rgb(219, 215, 196) -  slightly lighter beige 
+*************** Preferred colors
+lighter green for paragraph text - rgb(71, 102, 59)
+dark green - rgb(31, 69, 41)
+*/ 
+
+
+/** for background texture darker for header | Lighter for body **/
+
+/* Darker
+ background-color: #aba489;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+ */
+
+/* Light 
+background-color: #aba489;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+ */
