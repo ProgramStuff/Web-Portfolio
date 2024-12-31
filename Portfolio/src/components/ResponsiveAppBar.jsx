@@ -37,7 +37,7 @@ export default function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor: 'rgb(0, 0, 0, 0)', color: '#C197D2'}}>
+    <AppBar position="static" sx={{backgroundColor: 'rgb(33, 33, 33)', color: '#C197D2'}}>
       <Container maxWidth className='appBar'>
         <Toolbar disableGutters>
           <ParkRoundedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
