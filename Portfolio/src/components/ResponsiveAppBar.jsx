@@ -116,7 +116,7 @@ export default function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-              className='bar-text'
+              className='bar-text pages'
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: 'block', color: '#C197D2'}}

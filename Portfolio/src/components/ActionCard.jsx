@@ -33,8 +33,7 @@ import FLLHomeImage from '../assets/images/FLL-home.png';
               First Lego League Management
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
+              Manage First Lego League volunteers and set announcements
             </Typography>
           </CardContent>
 
@@ -42,8 +41,7 @@ import FLLHomeImage from '../assets/images/FLL-home.png';
             component="img"
             height="160"
             image={FLLHomeImage}
-            alt="green iguana"
-            sx={{borderRadius: '15px'}}
+            alt="Project image"
           />
 
         </CardActionArea>
