@@ -13,10 +13,12 @@ function App() {
   return (
     <>
       <Header />
-      <ActionCard />
-      <ActionCard />
-      <ActionCard />
-      <ActionCard />
+      <Container id='card-container'>
+        <ActionCard />
+        <ActionCard />
+        <ActionCard />
+        <ActionCard />
+      </Container>
       <Footer/>
     </>
   )

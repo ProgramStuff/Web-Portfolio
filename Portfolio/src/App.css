@@ -19,16 +19,27 @@
 
 /** Card Styles **/
 
-.MuiCard-root {
-  background: #fff;
-  border-radius: 7px;
-  padding: 10px;
-  margin: 6.2vh;
-  float: left;
 
+
+#card-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vh;
+  padding: 20px;
+  margin: 10vh auto;
 }
 
-@keyframes logo-spin {
+.MuiCard-root {
+  flex: 1 1 calc(33.333% - 20px);
+  background: #7c7b7b;
+  width: 50vh;
+  border-radius: 7px;
+  padding: 10px;
+  float: left;
+}
+
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -41,12 +52,6 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
+} */
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}

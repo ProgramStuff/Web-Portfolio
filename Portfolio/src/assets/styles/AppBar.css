@@ -8,6 +8,16 @@
     text-decoration: none;
 }
 
+.bar-text {
+      background: rgb(44,44,44);
+  background: -moz-linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
+  background: -webkit-linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
+  background: linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c2c2c",endColorstr="#959595",GradientType=1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 
