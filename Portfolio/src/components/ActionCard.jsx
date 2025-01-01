@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 
+import FLLHomeImage from '../assets/images/FLL-home.png';
+
 /**
  * 
  *   .note {
@@ -23,29 +25,28 @@ import CardActions from '@mui/material/CardActions';
   
   export default function ActionAreaCard() {
     return (
-      <Card sx={{ maxWidth: 345, backgroundColor: 'gray' }}>
+      <Card sx={{ maxWidth: 345, background: 'gray', borderRadius: '15px' }}>
         <CardActionArea>
-          <CardMedia
-            component="img"
-            height="140"
-            image='../assets/images/FLL-home.png'
-            alt="green iguana"
-          />
+ 
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              First Lego League Management
             </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
               Lizards are a widespread group of squamate reptiles, with over 6,000
               species, ranging across all continents except Antarctica
             </Typography>
           </CardContent>
+
+          <CardMedia
+            component="img"
+            height="160"
+            image={FLLHomeImage}
+            alt="green iguana"
+            sx={{borderRadius: '15px'}}
+          />
+
         </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-        </CardActions>
       </Card>
     );
   }
