@@ -37,12 +37,13 @@ export default function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor: 'rgb(33, 33, 33)', color: '#C197D2'}}>
+    <AppBar position="static" sx={{backgroundColor: 'rgb(0, 0, 0)'}}>
       <Container maxWidth className='appBar'>
         <Toolbar disableGutters>
-          <ParkRoundedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <ParkRoundedIcon className='bar-text' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
+            className='bar-text'
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
@@ -93,9 +94,10 @@ export default function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <ParkRoundedIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <ParkRoundedIcon className='bar-text' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
+            className='bar-text'
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
@@ -106,7 +108,6 @@ export default function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
             }}
           >
@@ -115,7 +116,7 @@ export default function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-              className='pages'
+              className='bar-text'
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: 'block', color: '#C197D2'}}

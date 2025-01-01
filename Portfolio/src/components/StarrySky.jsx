@@ -3,7 +3,7 @@ import '../assets/styles/Stars.css';
 import anime from 'animejs/lib/anime.es.js';
 
 const StarrySky = () => {
-  const [num] = useState(150);
+  const [num] = useState(200);
   const [vw] = useState(
     Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
   );
@@ -42,8 +42,8 @@ const StarrySky = () => {
 
   const randomRadius = () => Math.random() * 0.7 + 0.6;
 
-  const getRandomX = () => Math.floor(Math.random() * window.innerWidth - 10).toString();
-  const getRandomY = () => Math.floor(Math.random() * window.innerHeight - 10).toString();
+  const getRandomX = () => Math.floor(Math.random() * window.innerWidth).toString();
+  const getRandomY = () => Math.floor(Math.random() * window.innerHeight).toString();
 
   useEffect(() => {
     starryNight();
@@ -52,6 +52,8 @@ const StarrySky = () => {
 
   return (
     <div id="sky-header" class='star-container'>
+      <h1 class='intro' id='name'>Jordan Kelsey</h1>
+      <h2 class='intro' id='sub-title'>Software Developer</h2>
       <svg id="sky">
         {[...Array(num)].map((x, y) => (
           <circle
@@ -67,7 +69,7 @@ const StarrySky = () => {
         ))}
       </svg>
       <div id="shootingstars">
-        {[...Array(200)].map((x, y) => (
+        {[...Array(80)].map((x, y) => (
           <div
             key={y}
             className="wish"
