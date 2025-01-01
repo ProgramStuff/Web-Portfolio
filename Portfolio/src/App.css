@@ -60,12 +60,9 @@
 
 .MuiCard-root {
   flex: -2 1 calc(33.333% - 20px);
-  background: #7c7b7b;
   width: 50vh;
-  padding: 10px;
   float: left;
-}
-
+}   
 
 /* Responsive styles */
 @media (max-width: 1200px) {
