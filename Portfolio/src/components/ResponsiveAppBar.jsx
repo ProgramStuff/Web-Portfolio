@@ -40,7 +40,7 @@ export default function ResponsiveAppBar() {
     <AppBar position="static" sx={{backgroundColor: 'rgb(0, 0, 0)'}}>
       <Container maxWidth className='appBar'>
         <Toolbar disableGutters>
-          <ParkRoundedIcon className='bar-text' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          {/* <ParkRoundedIcon className='bar-text' sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             className='bar-text'
@@ -94,7 +94,7 @@ export default function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <ParkRoundedIcon className='bar-text' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <ParkRoundedIcon className='bar-text' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             className='bar-text'

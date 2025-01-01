@@ -5,7 +5,15 @@ body {
 
   #sky-header {
     height: 92vh;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(
+      0deg,
+      hsl(0deg 0% 0%) 72%,
+      hsl(240deg 100% 5%) 98%,
+      hsl(240deg 100% 5%) 101%,
+      hsl(240deg 100% 5%) 102%,
+      hsl(239deg 100% 5%) 101%,
+      hsl(238deg 100% 5%) 100%
+    );    
     overflow: hidden;
   }
   
@@ -64,5 +72,40 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  #name {
+      font-size: 8vh;
+  }
+  #sub-title {font-size: 2.5rem; 
+ }
+}
+
+@media (max-width: 900px) {
+  #name {
+    bottom: 5vh; 
+    left: 8vh;
+    font-size: 5vh; 
+ }
+ #sub-title {
+    top: 25vh;
+    left: 12vh;
+    font-size: 1.5rem;
+ }
+}
+
+@media (max-width: 600px) {
+ #name {
+    bottom: 5vh; 
+    left: 8vh;
+    font-size: 5vh; 
+ }
+ #sub-title {
+    top: 25vh;
+    left: 12vh;
+    font-size: 1.5rem;
+ }
 }
   

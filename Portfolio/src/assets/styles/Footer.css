@@ -1,7 +1,11 @@
 .footer{
-    background-color: rgb(33, 33, 33);
-    margin-top: 150vh;
+    background-color: black;
+    margin-top: 70vh;
     padding: 50px 0 20px;
+}
+
+.footer-link{
+    margin-left: 1vh;
 }
 
 .copyright{

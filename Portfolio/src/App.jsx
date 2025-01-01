@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './App.css'
 
 import ResponsiveAppBar from './components/ResponsiveAppBar'
-import ActionCard from './components/ActionCard'
-import { Container } from '@mui/material'
+
+import Body from './Body'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -13,12 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <Container id='card-container'>
-        <ActionCard />
-        <ActionCard />
-        <ActionCard />
-        <ActionCard />
-      </Container>
+      <Body />
       <Footer/>
     </>
   )
