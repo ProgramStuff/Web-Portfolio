@@ -57,7 +57,7 @@ body {
   #sub-title {
     position: absolute;
     top: 35vh;
-    left: 52vh;
+    left: 64vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-weight: normal;
@@ -80,31 +80,33 @@ body {
   #name {
       font-size: 8vh;
   }
-  #sub-title {font-size: 2.5rem; 
+  #sub-title {
+    font-size: 2.5rem;
+    left: 70vh; 
  }
 }
 
 @media (max-width: 900px) {
   #name {
-    bottom: 5vh; 
-    left: 8vh;
-    font-size: 5vh; 
+    top: 20vh; 
+    left: 50vh;
+    font-size: 10vh; 
  }
  #sub-title {
-    top: 25vh;
-    left: 12vh;
-    font-size: 1.5rem;
+    top: 38vh;
+    left: 58vh;
+    font-size: 7vh;
  }
 }
 
 @media (max-width: 600px) {
  #name {
-    bottom: 5vh; 
+    top: 30vh;
     left: 8vh;
     font-size: 5vh; 
  }
  #sub-title {
-    top: 25vh;
+    top: 40vh;
     left: 12vh;
     font-size: 1.5rem;
  }
