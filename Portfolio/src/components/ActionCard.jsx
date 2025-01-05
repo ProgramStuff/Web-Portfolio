@@ -9,23 +9,10 @@ import CardActions from '@mui/material/CardActions';
 
 import FLLHomeImage from '../assets/images/FLL-home.png';
 
-/**
- * 
- *   .note {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
-    padding: 10px;
-    width: 240px;
-    margin: 16px;
-    float: left;
-  }
- */
-
   
   export default function ActionAreaCard() {
     return (
-      <Card sx={{ maxWidth: 345, background: 'gray', borderRadius: '15px' }}>
+      <Card sx={{ maxWidth: 345, background: 'gray' }}>
         <CardActionArea>
  
           <CardContent>
