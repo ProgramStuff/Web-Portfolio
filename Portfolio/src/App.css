@@ -40,28 +40,43 @@
 
 
 
-#card-container {
+/* #card-container {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 8.2vh;
   padding: 0%;
   margin: 15vh auto;
-}
+} */
 
-.MuiCard-root:nth-of-type(3n+0){
+/* .MuiCard-root:nth-of-type(3n+0){
   margin-right: auto;
 }
-
-
-.MuiCard-root:nth-of-type(3n+1){
-  margin-left: auto;
-}
+*/
 
 .MuiCard-root {
-  flex: 0 0 calc(33.333% - 20px);
-  width: 50vh;
-}   
+  margin: 10vh auto;
+  width: 100vh;
+  height: 60vh;
+  overflow: visible;
+  position: absolute;
+  right: 200vh;
+}
+
+
+/* .visible-card{
+  right: 260vh;
+ }
+
+ .visible-card:nth-of-type(2n){
+  top: 200vh;
+  right: 260vh;
+ } */
+
+.MuiCard-root:nth-of-type(2n){
+  top: 200vh;
+  right: 260vh;
+} 
 
 /* Responsive styles */
 @media (max-width: 1200px) {
