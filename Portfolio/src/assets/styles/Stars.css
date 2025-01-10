@@ -1,114 +1,116 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  #sky-header {
-    height: 92vh;
-    background: black;
-    /* background-image: linear-gradient(
-      0deg,
-      hsl(0deg 0% 0%) 72%,
-      hsl(240deg 100% 5%) 98%,
-      hsl(240deg 100% 5%) 101%,
-      hsl(240deg 100% 5%) 102%,
-      hsl(239deg 100% 5%) 101%,
-      hsl(238deg 100% 5%) 100%
-    );     */
-    overflow: hidden;
-  }
-  
-  #sky {
-    width: 100%;
-    height: 100%;
-  }
+#sky-header {
+  height: 92vh;
+  background: black;
+  /* background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 0%) 72%,
+    hsl(240deg 100% 5%) 98%,
+    hsl(240deg 100% 5%) 101%,
+    hsl(240deg 100% 5%) 102%,
+    hsl(239deg 100% 5%) 101%,
+    hsl(238deg 100% 5%) 100%
+  );     */
+  overflow: hidden;
+}
 
-  #shootingstars {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: visible;
-    position: relative; 
-    transform: translateX(calc(20vw - 50%)) translateY(calc(20vh - 50%)) rotate(120deg);
-  }
-  
-  .wish {
-    height: 2px;
-    width: 100px;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-    background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
-    position: absolute;
-    filter: drop-shadow(0 0 6px white);
-  }
+#sky {
+  width: 100%;
+  height: 100%;
+}
 
-  #name{
-    position: absolute;
-    top: 15vh;
-    left: 52vh;
-    font-size: 10vh;
-    line-height: 2;
-    letter-spacing: 0.08em;
+#shootingstars {
+  margin: 0;
+  padding: 0;
+  width: 150vh;
+  height: 150vh;
+  position: relative; 
+  overflow: hidden;
+  transform: translateX(calc(20vw - 50%)) translateY(calc(20vh - 50%)) rotate(120deg);
+  left: 60vh;
+  bottom: 50vh;
+}
 
-  }
+.wish {
+  height: 2px;
+  width: 100px;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
+  position: absolute;
+  filter: drop-shadow(0 0 6px white);
+}
 
-  #sub-title {
-    position: absolute;
-    top: 35vh;
-    left: 64vh;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    font-weight: normal;
+#name{
+  position: absolute;
+  top: 15vh;
+  left: 52vh;
+  font-size: 10vh;
+  line-height: 2;
+  letter-spacing: 0.08em;
+
+}
+
+#sub-title {
+  position: absolute;
+  top: 35vh;
+  left: 64vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: normal;
 
 }
 
 .intro {
-  background: rgb(44,44,44);
-  background: -moz-linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
-  background: -webkit-linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
-  background: linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c2c2c",endColorstr="#959595",GradientType=1);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+background: rgb(44,44,44);
+background: -moz-linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
+background: -webkit-linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
+background: linear-gradient(0deg, rgba(44,44,44,1) 0%, rgba(149,149,149,1) 63%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2c2c2c",endColorstr="#959595",GradientType=1);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 /* Responsive styles */
 @media (max-width: 1200px) {
-  #name {
-      font-size: 8vh;
-  }
-  #sub-title {
-    font-size: 2.5rem;
-    left: 70vh; 
- }
+#name {
+    font-size: 8vh;
+}
+#sub-title {
+  font-size: 2.5rem;
+  left: 70vh; 
+}
 }
 
 @media (max-width: 900px) {
-  #name {
-    top: 20vh; 
-    left: 50vh;
-    font-size: 10vh; 
- }
- #sub-title {
-    top: 38vh;
-    left: 58vh;
-    font-size: 7vh;
- }
+#name {
+  top: 20vh; 
+  left: 50vh;
+  font-size: 10vh; 
+}
+#sub-title {
+  top: 38vh;
+  left: 58vh;
+  font-size: 7vh;
+}
 }
 
 @media (max-width: 600px) {
- #name {
-    top: 30vh;
-    left: 8vh;
-    font-size: 5vh; 
- }
- #sub-title {
-    top: 40vh;
-    left: 12vh;
-    font-size: 1.5rem;
- }
+#name {
+  top: 30vh;
+  left: 8vh;
+  font-size: 5vh; 
 }
-  
+#sub-title {
+  top: 40vh;
+  left: 12vh;
+  font-size: 1.5rem;
+}
+}
+

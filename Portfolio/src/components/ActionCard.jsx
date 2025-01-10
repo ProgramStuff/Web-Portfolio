@@ -13,53 +13,47 @@ import FLLHomeImage from '../assets/images/FLL-home.png';
   
   export default function ActionAreaCard() {
 
-    // const [visibleCard, setVisibleCard] = React.useState("");
+    const [cardState, setCardState] = React.useState("");
 
-
-//     async function scrollAnimation (element, rootMargin) {
-//       const [isVisible, setIsVisible] = React.useState(false);
-
-//       React.useEffect(() => {
-//         const current = element?.current;
-//         const observer = new IntersectionObserver(
-//           ([entry]) => {
-//             setIsVisible(entry.isIntersecting);
-//           },
-//           { rootMargin }
-//         );
-//         current && observer?.observe(current);
-
-//         return () => current && observer.unobserve(current);
-//       }, []);
-//       return isVisible;
-// };
-
-    // const triggerRef = React.useRef(null);
-    // const isVisible = scrollAnimation(triggerRef, "0px");
-
-    // React.useEffect(() => {
-    //   if (isVisible) {
-    //     console.log(isVisible);
-    //     setVisibleCard("visible-card");
-    //     slideCards(); // Trigger a function when the container is visible on view port
-    //   }
-    // }, [slideCards, isVisible]);
-
-    const slideCards = () => {
+    async function slideCards() {
       anime({
-        targets: '.project-cards',
+        targets: '.slide-card',
         easing: 'easeInOutExpo',
         translateX: 1450,
-        duration: 600
+        duration: 600,
       });
     }
 
+    const scrollAnimation = (element, rootMargin) => {
+      const [isVisible, setIsVisible] = React.useState();
+
+      React.useEffect(() => {
+        const current = element?.current;
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            setIsVisible(entry.isIntersecting);
+          },
+          { rootMargin }
+        );
+        current && observer?.observe(current);
+
+        return () => current && observer.unobserve(current);
+      }, []);
+      return isVisible;
+};
+
+  const triggerRef = React.useRef(null);
+  const isVisible = scrollAnimation(triggerRef, "0px");
+
     React.useEffect(() => {
-      slideCards();
-    })
+      if (isVisible) {
+        setCardState("slide-card");
+        slideCards();
+      }
+    }, [slideCards, isVisible]);
 
     return (
-      <Card className='project-cards' sx={{ background: 'gray' }}>
+      <Card ref={triggerRef} className={cardState ? cardState : "hidden-card"} sx={{ background: 'gray' }}>
         <CardActionArea>
  
           <CardContent>

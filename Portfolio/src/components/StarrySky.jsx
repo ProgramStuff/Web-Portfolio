@@ -74,8 +74,8 @@ const StarrySky = () => {
             key={y}
             className="wish"
             style={{
-              left: `${getRandomX() - 300}px`,
-              top: `${getRandomY() - 200}px`
+              left: `${getRandomX()}px`,
+              top: `${getRandomY()}px`
             }}
           />
         ))}
